@@ -7,10 +7,17 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "django-insecure-mf1-_f%j-2xsre0n37h
 
 DEBUG = os.getenv("DJANGO_DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "anshukumarsingh.pythonanywhere.com").split(",")
+# Update ALLOWED_HOSTS
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "anshukumarsingh.pythonanywhere.com,localhost").split(",")
 
+# Add DigiYatra Vercel frontend to ALLOWED_HOSTS
+ALLOWED_HOSTS += ["digi-yatra-in.vercel.app"]
+
+# Update CORS settings
 CORS_ALLOWED_ORIGINS = [
     "https://anshukumarsingh.pythonanywhere.com",
+    "http://localhost:3000",
+    "https://digi-yatra-in.vercel.app",  # Added Vercel deployment
 ]
 
 INSTALLED_APPS = [

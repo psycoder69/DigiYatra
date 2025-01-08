@@ -49,7 +49,7 @@ export const VerifyPassengerButton = ({ cameraAllowed, webcamRef }: { cameraAllo
             }));
 
         try {
-            const response = await fetch("http://localhost:8000/facial_recognition/recognize_face/", {
+            const response = await fetch("https://anshukumarsingh.pythonanywhere.com/facial_recognition/recognize_face/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
