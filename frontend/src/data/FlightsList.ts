@@ -1,0 +1,58 @@
+import { FlightType } from "@/types/FlightType";
+
+export const flightsList: FlightType[] = [
+    {
+        id: "vistara",
+        name: "Vistara",
+        logo: "/airlines-logo/vistara.webp",
+        departureTime: "17:20",
+        arrivalTime: "19:40",
+        totalTravelTime: "2h 20m",
+        price: 8500,
+    },
+    {
+        id: "air-india",
+        name: "Air India",
+        logo: "/airlines-logo/air-india.webp",
+        departureTime: "07:30",
+        arrivalTime: "09:45",
+        totalTravelTime: "2h 15m",
+        price: 6200,
+    },
+    {
+        id: "go-first",
+        name: "Go First",
+        logo: "/airlines-logo/go-first.webp",
+        departureTime: "13:00",
+        arrivalTime: "15:20",
+        totalTravelTime: "2h 20m",
+        price: 6950,
+    },
+    {
+        id: "indigo",
+        name: "IndiGo",
+        logo: "/airlines-logo/indigo.webp",
+        departureTime: "08:15",
+        arrivalTime: "10:25",
+        totalTravelTime: "2h 10m",
+        price: 5500,
+    },
+    {
+        id: "airasia-india",
+        name: "AirAsia India",
+        logo: "/airlines-logo/air-asia.webp",
+        departureTime: "18:50",
+        arrivalTime: "21:10",
+        totalTravelTime: "2h 20m",
+        price: 6100,
+    },
+    {
+        id: "spicejet",
+        name: "SpiceJet",
+        logo: "/airlines-logo/spicejet.webp",
+        departureTime: "11:45",
+        arrivalTime: "14:30",
+        totalTravelTime: "2h 45m",
+        price: 7800,
+    },
+];
