@@ -23,7 +23,7 @@ export const useFlightBookingStepStore = create<FlightBookingStepStore>((set) =>
 
             return {
                 activeBookingStep: newActiveBookingStep,
-                maxBookingStep: Math.max(state.maxBookingStep, newActiveBookingStep), // Update maxBookingStep if the current step is greater
+                maxBookingStep: (step < 0 ? 0 : Math.max(state.maxBookingStep, newActiveBookingStep)), // Update maxBookingStep if the current step is greater
                 currentMessageStep: 0
             };
         }),
